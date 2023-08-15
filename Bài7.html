@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<b>Bài 7- Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử, nhập/tạo phần tử số nguyên V. Chương trình kiểm tra xem V có thuộc mảng đã cho không, nếu V thuộc mảng đã cho xoá V khỏi mảng (Bản chất việc xoá ở đây tức là dịch phần tử ở bên phải V sang vị trí của V, và gán 0 cho phần tử cuối cùng của mảng)</b>
+<script>
+    let mang=[];
+    for (let i = 0; i <10 ; i++) {
+        mang.push(+prompt("Nhập 10 số bất kì:"))
+    }
+    let a=+prompt("Nhập 1 số V:")
+    for (let j = 0; j <mang.length ; j++) {
+        if(mang[j]===a){
+            mang.splice(j,1)
+        }
+    }
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<b>Bài 3- Viết chương trình khởi tạo mảng số nguyên. Hiển hiện giá trị lớn nhất trong mảng đó. In ra giá trị trung bình của các phần tử trong mảng.</b>
+<script>
+    let mang=[1,3,6,7,9,10,30,11,15,19];
+    let max=mang[0]
+    let tongcacphantu=0;
+    let count=0;
+    let avg;
+    for (let i = 0; i <mang.length ; i++) {
+        tongcacphantu+=mang[i];
+        count+=1;
+        if(mang[i]>max){
+            max=mang[i];
+        }
+    }document.write(`<br> Giá trị lớn nhất trong mảng là ${max} và giá trị trung bình của các phần tử trong mảng là ${avg=tongcacphantu/count}`)
+
+</script>
+</body>
+</html>
